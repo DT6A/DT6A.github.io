@@ -20,10 +20,10 @@
                 <p style="text-align:center">
                     <name>Denis Tarasov</name>
                 </p>
-                <p>I am an undergraduate student at <a href="https://www.jacobs-university.de/">Jacobs University Bremen</a> in Computer Science, earlier I studied at <a href="https://www.hse.ru/en">Higher School of Economics</a>. Right now I'm Machine Learning Engineering intern at Meta AI Applied Research Relevance team.
+                <p>I am an undergraduate student at <a href="https://www.jacobs-university.de/">Jacobs University Bremen</a> in Computer Science, earlier I studied at <a href="https://www.hse.ru/en">Higher School of Economics</a>. Right now I'm researcher at Tinkoff AI.
                 </p>
                 <p>
-                    Previously I did Machine Learning research projects at <a href="https://tinkoffgroup.com">Tinkoff AI</a>, <a href="https://yandex.com/company">Yandex</a> and <a href="https://research.jetbrains.org">JetBrains Research</a>.
+                    Previously I did Machine Learning research projects at Meta AI, <a href="https://tinkoffgroup.com">Tinkoff AI</a>, <a href="https://yandex.com/company">Yandex</a> and <a href="https://research.jetbrains.org">JetBrains Research</a>.
                 </p>
                 <p style="text-align:center">
                     <a href="mailto:tarasov.denis.al@gmail.com">Email</a> &nbsp/&nbsp
@@ -51,6 +51,68 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+        <tr>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://openreview.net/forum?id=SyAS49bBcv">
+                <papertitle>CORL: Research-oriented Deep Offline Reinforcement Learning Library</papertitle>
+            </a>
+            <br>
+            <strong>Denis Tarasov</strong>,
+            Alexander Nikulin,
+            Dmitry Akimov,
+            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
+            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
+            <br>
+            <em>NeurIPS 3rd Offline RL Workshop: Offline RL as a "Launchpad"</em>, 2022
+            <br>
+                <a href="https://github.com/tinkoff-ai/CORL">code</a>
+            <p></p>
+            <p>CORL is an open-source library that provides single-file implementations of Deep Offline Reinforcement Learning algorithms. It emphasizes a simple developing experience with a straightforward codebase and a modern analysis tracking tool. In CORL, we isolate methods implementation into distinct single files, making performance-relevant details easier to recognise. Additionally, an experiment tracking feature is available to help log metrics, hyperparameters, dependencies, and more to the cloud. Finally, we have ensured the reliability of the implementations by benchmarking a commonly employed D4RL benchmark.</p>
+        </td>
+        </tr>
+        <tr>
+
+        <tr>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://openreview.net/forum?id=mvjQwKFYJ_">
+                <papertitle>Q-Ensemble for Offline RL: Don't Scale the Ensemble, Scale the Batch Size</papertitle>
+            </a>
+            <br>
+            Alexander Nikulin,
+            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
+            <strong>Denis Tarasov</strong>,
+            Dmitry Akimov,
+            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
+            <br>
+            <em>NeurIPS 3rd Offline RL Workshop: Offline RL as a "Launchpad"</em>, 2022
+            <br>
+<!--            <a href="data/acl-prompts.pdf">poster</a>-->
+            <p></p>
+            <p>Training large neural networks is known to be time-consuming, with the learning duration taking days or even weeks. To address this problem, large-batch optimization was introduced. This approach demonstrated that scaling mini-batch sizes with appropriate learning rate adjustments can speed up the training process by orders of magnitude. While long training time was not typically a major issue for model-free deep offline RL algorithms, recently introduced Q-ensemble methods achieving state-of-the-art performance made this issue more relevant, notably extending the training duration. In this work, we demonstrate how this class of methods can benefit from large-batch optimization, which is commonly overlooked by the deep offline RL community. We show that scaling the mini-batch size and naively adjusting the learning rate allows for (1) a reduced size of the Q-ensemble, (2) stronger penalization of out-of-distribution actions, and (3) improved convergence time, effectively shortening training duration by 2.5x times on average.</p>
+        </td>
+        </tr>
+        <tr>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://openreview.net/forum?id=qG_x6oTIki">
+                <papertitle>Let Offline RL Flow: Training Conservative Agents in the Latent Space of Normalizing Flows</papertitle>
+            </a>
+            <br>
+            Dmitry Akimov,
+            Alexander Nikulin,
+            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
+            <strong>Denis Tarasov</strong>,
+            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
+            <br>
+            <em>NeurIPS 3rd Offline RL Workshop: Offline RL as a "Launchpad"</em>, 2022
+            <br>
+<!--            <a href="data/acl-prompts.pdf">poster</a>-->
+            <p></p>
+            <p>Offline reinforcement learning aims to train a policy on a pre-recorded and fixed dataset without any additional environment interactions. There are two major challenges in this setting: (1) extrapolation error caused by approximating the value of state-action pairs not well-covered by the training data and (2) distributional shift between behavior and inference policies. One way to tackle these problems is to induce conservatism - i.e., keeping the learned policies closer to the behavioral ones. To achieve this, we build upon recent works on learning policies in latent action spaces and use a special form of Normalizing Flows for constructing a generative model, which we use as a conservative action encoder. This Normalizing Flows action encoder is pre-trained in a supervised manner on the offline dataset, and then an additional policy model - controller in the latent space - is trained via reinforcement learning.
+
+                This approach avoids querying actions outside of the training dataset and therefore does not require additional regularization for out-of-dataset actions. We evaluate our method on various locomotion and navigation tasks, demonstrating that our approach outperforms recently proposed algorithms with generative action models on a large portion of datasets.</p>
+        </td>
+        </tr>
+        <tr>
         <td style="padding:20px;width:75%;vertical-align:middle">
             <a href="https://openreview.net/forum?id=Spf4TE6NkWq">
                 <papertitle>Prompts and Pre-Trained Language Models for Offline Reinforcement Learning </papertitle>
@@ -72,7 +134,7 @@
                 that it is not necessary when working with finance environments in order to retain
                 significant improvement in the final performance.</p>
         </td>
-
+        </tr>
         <tr>
             <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://drive.google.com/file/d/1ZUxNDdUQuXIcdbboHrOjC-gZwrGaF3pE/view?usp=sharing">
