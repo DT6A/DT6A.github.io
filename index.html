@@ -76,23 +76,6 @@
             
         <tr>
         <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2306.08772">
-                <papertitle>Katakomba: Tools and Benchmarks for Data-Driven NetHack </papertitle>
-            </a>
-            <br>
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            <strong>Denis Tarasov</strong>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>Preprint</em>, 2023
-            <p>NetHack is known as the frontier of reinforcement learning research where learning-based methods still need to catch up to rule-based solutions. One of the promising directions for a breakthrough is using pre-collected datasets similar to recent developments in robotics, recommender systems, and more under the umbrella of offline reinforcement learning (ORL). Recently, a large-scale NetHack dataset was released; while it was a necessary step forward, it has yet to gain wide adoption in the ORL community. In this work, we argue that there are three major obstacles for adoption: tool-wise, implementation-wise, and benchmark-wise. To address them, we develop an open-source library that provides workflow fundamentals familiar to the ORL community: pre-defined D4RL-style tasks, uncluttered baseline implementations, and reliable evaluation tools with accompanying configs and logs synced to the cloud.</p>
-        </td>
-        </tr>
-        <tr>
-            
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
             <a href="https://arxiv.org/abs/2305.09836">
                 <papertitle>Revisiting the Minimalist Approach to Offline Reinforcement Learning </papertitle>
             </a>
@@ -104,8 +87,46 @@
             <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
             <a href="https://scitator.com/">Sergey Kolesnikov</a>,
             <br>
-            <em>Workshop on Reincarnating Reinforcement Learning at ICLR</em>, 2023
+            <em>NeurIPS</em>, 2023
             <p>Recent years have witnessed significant advancements in offline reinforcement learning (RL), resulting in the development of numerous algorithms with varying degrees of complexity. While these algorithms have led to noteworthy improvements, many incorporate seemingly minor design choices that impact their effectiveness beyond core algorithmic advances. However, the effect of these design choices on established baselines remains understudied. In this work, we aim to bridge this gap by conducting a retrospective analysis of recent works in offline RL and propose ReBRAC, a minimalistic algorithm that integrates such design elements built on top of the TD3+BC method. We evaluate ReBRAC on 51 datasets with both proprioceptive and visual state spaces using D4RL and V-D4RL benchmarks, demonstrating its state-of-the-art performance among ensemble-free methods. To further illustrate the efficacy of these design choices, we perform a large-scale ablation study and hyperparameter sensitivity analysis on the scale of thousands of experiments.</p>
+        </td>
+        </tr>
+        <tr>
+
+        <tr>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://openreview.net/forum?id=SyAS49bBcv">
+                <papertitle>CORL: Research-oriented Deep Offline Reinforcement Learning Library</papertitle>
+            </a>
+            <br>
+            <strong>Denis Tarasov</strong>,
+            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
+            Dmitry Akimov,
+            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
+            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
+            <br>
+            <em>NeurIPS</em>, 2023
+            <br>
+                <a href="https://github.com/corl-team/CORL">code</a>
+            <p></p>
+            <p>CORL is an open-source library that provides single-file implementations of Deep Offline Reinforcement Learning algorithms. It emphasizes a simple developing experience with a straightforward codebase and a modern analysis tracking tool. In CORL, we isolate methods implementation into distinct single files, making performance-relevant details easier to recognise. Additionally, an experiment tracking feature is available to help log metrics, hyperparameters, dependencies, and more to the cloud. Finally, we have ensured the reliability of the implementations by benchmarking a commonly employed D4RL benchmark.</p>
+        </td>
+        </tr>
+        <tr>
+
+        <tr>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2306.08772">
+                <papertitle>Katakomba: Tools and Benchmarks for Data-Driven NetHack </papertitle>
+            </a>
+            <br>
+            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
+            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
+            <strong>Denis Tarasov</strong>,
+            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
+            <br>
+            <em>NeurIPS</em>, 2023
+            <p>NetHack is known as the frontier of reinforcement learning research where learning-based methods still need to catch up to rule-based solutions. One of the promising directions for a breakthrough is using pre-collected datasets similar to recent developments in robotics, recommender systems, and more under the umbrella of offline reinforcement learning (ORL). Recently, a large-scale NetHack dataset was released; while it was a necessary step forward, it has yet to gain wide adoption in the ORL community. In this work, we argue that there are three major obstacles for adoption: tool-wise, implementation-wise, and benchmark-wise. To address them, we develop an open-source library that provides workflow fundamentals familiar to the ORL community: pre-defined D4RL-style tasks, uncluttered baseline implementations, and reliable evaluation tools with accompanying configs and logs synced to the cloud.</p>
         </td>
         </tr>
         <tr>
@@ -123,27 +144,6 @@
             <br>
             <em>ICML</em>, 2023
             <p>Despite the success of Random Network Distillation (RND) in various domains, it was shown as not discriminative enough to be used as an uncertainty estimator for penalizing out-of-distribution actions in offline reinforcement learning. In this paper, we revisit these results and show that, with a naive choice of conditioning for the RND prior, it becomes infeasible for the actor to effectively minimize the anti-exploration bonus and discriminativity is not an issue. We show that this limitation can be avoided with conditioning based on Feature-wise Linear Modulation (FiLM), resulting in a simple and efficient ensemble-free algorithm based on Soft Actor-Critic. We evaluate it on the D4RL benchmark, showing that it is capable of achieving performance comparable to ensemble-based methods and outperforming ensemble-free approaches by a wide margin.</p>
-        </td>
-        </tr>
-        <tr>
-            
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://openreview.net/forum?id=SyAS49bBcv">
-                <papertitle>CORL: Research-oriented Deep Offline Reinforcement Learning Library</papertitle>
-            </a>
-            <br>
-            <strong>Denis Tarasov</strong>,
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            Dmitry Akimov,
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>NeurIPS 3rd Offline RL Workshop: Offline RL as a "Launchpad"</em>, 2022
-            <br>
-                <a href="https://github.com/tinkoff-ai/CORL">code</a>
-            <p></p>
-            <p>CORL is an open-source library that provides single-file implementations of Deep Offline Reinforcement Learning algorithms. It emphasizes a simple developing experience with a straightforward codebase and a modern analysis tracking tool. In CORL, we isolate methods implementation into distinct single files, making performance-relevant details easier to recognise. Additionally, an experiment tracking feature is available to help log metrics, hyperparameters, dependencies, and more to the cloud. Finally, we have ensured the reliability of the implementations by benchmarking a commonly employed D4RL benchmark.</p>
         </td>
         </tr>
         <tr>
