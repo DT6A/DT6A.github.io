@@ -64,135 +64,142 @@
   </header>
 
   <main class="container">
-    <section class="panel reveal">
-      <h2>Publications</h2>
+    <details class="panel reveal publications-panel" open>
+      <summary><h2>Publications</h2></summary>
+      <div class="publications-body">
+      <div class="pub-filter" role="group" aria-label="Filter publications by authorship">
+        <button class="pub-filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="pub-filter-btn" type="button" data-filter="main" aria-pressed="false">Main Author</button>
+        <button class="pub-filter-btn" type="button" data-filter="co" aria-pressed="false">Co-author</button>
+      </div>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2602.09580">Sample-Efficient Real-World Dexterous Policy Fine-Tuning via Action-Chunked Critics and Normalizing Flows</a></h3>
         <p class="meta">Preprint, 2026</p>
         <p>Chenyu Yang, <strong>Denis Tarasov</strong>, Davide Liconti, Hehui Zheng, Robert K. Katzschmann</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2508.16845">NinA: Normalizing Flows in Action. Training VLA Models with Normalizing Flows</a></h3>
         <p class="meta">EWM Workshop, NeurIPS 2025</p>
         <p><strong>Denis Tarasov</strong>, Alexander Nikulin, Ilya Zisman, Albina Klepach, Nikita Lyubaykin, Andrei Polubarov, Alexander Derevyagin, Vladislav Kurenkov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2505.22914">cadrille: Multi-modal CAD Reconstruction with Online Reinforcement Learning</a></h3>
         <p class="meta">ICLR 2026 (Oral)</p>
         <p>Maksim Kolodiazhnyi, <strong>Denis Tarasov</strong>, Dmitrii Zhemchuzhnikov, Alexander Nikulin, Ilya Zisman, Anna Vorontsova, Anton Konushin, Vladislav Kurenkov, Danila Rukhovich</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://arxiv.org/abs/2502.00379">Latent action learning requires supervision in the presence of distractors</a></h3>
         <p class="meta">ICML 2025</p>
         <p>Alexander Nikulin, Ilya Zisman, <strong>Denis Tarasov</strong>, Nikita Lyubaykin, Andrei Polubarov, Igor Kiselev, Vladislav Kurenkov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://arxiv.org/abs/2501.19400">Vintix: Action Model via In-Context Reinforcement Learning</a></h3>
         <p class="meta">ICML 2025</p>
         <p>Andrey Polubarov, Nikita Lyubaykin, Alexander Derevyagin, Ilya Zisman, <strong>Denis Tarasov</strong>, Alexander Nikulin, Vladislav Kurenkov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2502.17666">Yes, Q-learning helps offline in-context RL</a></h3>
         <p class="meta">SSI-FM Workshop, ICRL 2025</p>
         <p><strong>Denis Tarasov</strong>, Alexander Nikulin, Ilya Zisman, Albina Klepach, Andrei Polubarov, Nikita Lyubaykin, Alexander Derevyagin, Igor Kiselev, Vladislav Kurenkov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://arxiv.org/abs/2502.09680">Object-Centric Latent Action Learning</a></h3>
         <p class="meta">Workshop on World Models, ICLR 2025</p>
         <p>Albina Klepach, Alexander Nikulin, Ilya Zisman, <strong>Denis Tarasov</strong>, Alexander Derevyagin, Andrei Polubarov, Nikita Lyubaykin, Vladislav Kurenkov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://arxiv.org/abs/2411.01958">N-gram induction heads for in-context RL: Improving stability and reducing data needs</a></h3>
         <p class="meta">SSI-FM Workshop, ICRL 2025</p>
         <p>Ilya Zisman, Alexander Nikulin, Viacheslav Sinii, <strong>Denis Tarasov</strong>, Nikita Lyubaykin, Andrei Polubarov, Igor Kiselev, Vladislav Kurenkov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2409.07606">The Role of Deep Learning Regularizations on Actors in Offline RL</a></h3>
         <p class="meta">Preprint, 2024</p>
         <p><strong>Denis Tarasov</strong>, Anja Surina, Caglar Gulcehre</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2406.06309">Is Value Functions Estimation with Classification Plug-and-play for Offline Reinforcement Learning?</a></h3>
         <p class="meta">TMLR, 2024</p>
         <p><strong>Denis Tarasov</strong>, Kirill Brilliantov, Dmitrii Kharlapenko</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2402.01812">Distilling LLMs' Decomposition Abilities into Compact Language Models</a></h3>
         <p class="meta">ICML 2024 Workshops (AI4MATH and AutoRL)</p>
         <p><strong>Denis Tarasov</strong>, Kumar Shridhar</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://openreview.net/forum?id=olMBz7gxls">Offline RL for generative design of protein binders</a></h3>
         <p class="meta">NeurIPS 2023 Workshop AI4D3 (Oral)</p>
         <p><strong>Denis Tarasov</strong>, Ulrich Mbou Sob, Miguel Arbesu, Nima H. Siboni, Sebastien Boyer, Andries Smit, Oliver Bent, Arnu Pretorius, Marcin Skwark</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://arxiv.org/abs/2305.09836">Revisiting the Minimalist Approach to Offline Reinforcement Learning</a></h3>
         <p class="meta">NeurIPS 2023</p>
         <p><strong>Denis Tarasov</strong>, Vladislav Kurenkov, Alexander Nikulin, Sergey Kolesnikov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://openreview.net/forum?id=SyAS49bBcv">CORL: Research-oriented Deep Offline Reinforcement Learning Library</a></h3>
         <p class="meta">NeurIPS 2023</p>
         <p><strong>Denis Tarasov</strong>, Alexander Nikulin, Dmitry Akimov, Vladislav Kurenkov, Sergey Kolesnikov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://arxiv.org/abs/2306.08772">Katakomba: Tools and Benchmarks for Data-Driven NetHack</a></h3>
         <p class="meta">NeurIPS 2023</p>
         <p>Vladislav Kurenkov, Alexander Nikulin, <strong>Denis Tarasov</strong>, Sergey Kolesnikov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://arxiv.org/abs/2301.13616">Anti-Exploration by Random Network Distillation</a></h3>
         <p class="meta">ICML 2023</p>
         <p>Alexander Nikulin, Vladislav Kurenkov, <strong>Denis Tarasov</strong>, Sergey Kolesnikov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://openreview.net/forum?id=mvjQwKFYJ_">Q-Ensemble for Offline RL: Don't Scale the Ensemble, Scale the Batch Size</a></h3>
         <p class="meta">NeurIPS 2022 Offline RL Workshop</p>
         <p>Alexander Nikulin, Vladislav Kurenkov, <strong>Denis Tarasov</strong>, Dmitriy Akimov, Sergey Kolesnikov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="co">
         <h3><a href="https://openreview.net/forum?id=qG_x6oTIki">Let Offline RL Flow: Training Conservative Agents in the Latent Space of Normalizing Flows</a></h3>
         <p class="meta">NeurIPS 2022 Offline RL Workshop</p>
         <p>Dmitriy Akimov, Vladislav Kurenkov, Alexander Nikulin, <strong>Denis Tarasov</strong>, Sergey Kolesnikov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://openreview.net/forum?id=Spf4TE6NkWq">Prompts and Pre-Trained Language Models for Offline Reinforcement Learning</a></h3>
         <p class="meta">ICLR 2022 Workshop GPL</p>
         <p><strong>Denis Tarasov</strong>, Vladislav Kurenkov, Sergey Kolesnikov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://infocom.spbstu.ru/userfiles/files/articles/2022/4/86-97.pdf">Fixing 1-bit Adam and 1-bit LAMB algorithms</a></h3>
         <p class="meta">SEIM 2022 (Oral)</p>
         <p><strong>Denis Tarasov</strong>, Vasily Ershov</p>
       </article>
 
-      <article class="pub">
+      <article class="pub" data-authorship="main">
         <h3><a href="https://link.springer.com/article/10.1007/s42001-023-00205-y">Predicting ethnicity with data on personal names in Russia</a></h3>
         <p class="meta">Journal of Computational Social Science, 2023</p>
         <p>Alexey Bessudnov, <strong>Denis Tarasov</strong>, Viacheslav Panasovets, Veronica Kostenko, Ivan Smirnov, Vladimir Uspenskiy</p>
       </article>
-    </section>
+      </div>
+    </details>
 
     <section class="panel reveal">
       <h2>Experience</h2>
@@ -265,6 +272,7 @@
   <!-- <footer class="container footer">
     <p>Last updated from CV data: February 2026.</p>
   </footer> -->
+  <script src="pub-filter.js"></script>
   <script src="julia-bg.js"></script>
 </body>
 </html>
