@@ -1,290 +1,270 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Denis Tarasov">
+  <meta name="description" content="Denis Tarasov - PhD researcher in AI and Robotics at ETH Zurich. Research in reinforcement learning, robotics, and generative policies.">
+  <title>Denis Tarasov | Research</title>
 
-    <title>Denis Tarasov</title>
-
-    <meta name="author" content="Denis Tarasov">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>DT</text></svg>">
 </head>
-
 <body>
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr style="padding:0px">
-    <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p style="text-align:center">
-                    <name>Denis Tarasov</name>
-                </p>
-                <p>I obtained my BSc in Computer Science at <a href="https://www.jacobs-university.de/">Constructor (ex Jacobs) University Bremen</a> while studying at first at <a href="https://www.hse.ru/en">Higher School of Economics</a>. I'm currently getting my Masters degree at <a href="https://ethz.ch/en.html">ETH Zurich</a>. Right now I'm research assistant at <a href="https://www.mrinmaya.io/">ETH NLPED lab</a>.
-                </p>
-                <p>
-                    Previously I did Machine Learning research projects at Meta AI, <a href="https://www.instadeep.com/">InstaDeep</a>, <a href="https://tinkoffgroup.com">Tinkoff AI</a>, <a href="https://yandex.com/company">Yandex</a> and <a href="https://research.jetbrains.org">JetBrains Research</a>.
-                </p>
-                <p style="text-align:center">
-                    <a href="mailto:tarasov.denis.al@gmail.com">Email</a> &nbsp/&nbsp
-                    <a href="data/Denis_Tarasov_CV.pdf">CV</a> &nbsp/&nbsp
-<!--                    <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp-->
-                    <a href="https://scholar.google.ru/citations?user=LQcCkD8AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                    <a href="https://www.semanticscholar.org/author/Denis-Tarasov/2064312685">Semantic Scholar</a> &nbsp/&nbsp
-                    <a href="https://twitter.com/ML_is_overhyped">Twitter</a> &nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/tarasovdeal/">Linkedin</a> &nbsp/&nbsp
-                    <a href="https://github.com/DT6A/">Github</a>
-                </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/profile_photo.jpg"><img style="width:50%;max-width:50%" alt="profile photo" src="images/profile_photo.jpg" class="hoverZoomLink"></a>
-            </td>
-        </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Research</heading>
-                <p>
-                    I'm interested in Reinforcement Learning, Natural Language Processing and Bioinformatics.
-                </p>
-            </td>
-        </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <canvas id="julia-canvas" class="julia-bg" aria-hidden="true"></canvas>
+  <div class="page-glow" aria-hidden="true"></div>
 
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://openreview.net/forum?id=olMBz7gxls">
-                <papertitle>Offline RL for generative design of protein binders </papertitle>
-                </a>
-            <br>
-            <strong>Denis Tarasov</strong>,
-            Ulrich Mbou, 
-            Miguel Arbesú, 
-            Nima Siboni, 
-            Sebastien Boyer, 
-            Dries Smit, 
-            Oliver Bent, 
-            Arnu Pretorius
-            <br>
-            <em>NeurIPS 2023 Workshop on New Frontiers of AI for Drug Discovery and Development</em>, 2023 <strong>(Oral Presentation)</strong>
-            <p>Offline Reinforcement Learning (RL) offers a compelling avenue for solving RL problems without the need for interactions with the environment, which can be costly or risky. While online RL methods have found success in various domains, such as de-novo drug generation, they struggle when it comes to optimizing essential properties like drug docking efficiency. The high computational cost associated with the docking process makes it impractical for online RL, which typically requires hundreds of thousands of interactions to learn. In this study, we propose the application of offline RL to address the bottleneck posed by the docking process, leveraging RL's capability to optimize non-differentiable properties. Our preliminary investigation focuses on using offline RL to generate drugs with improved docking and chemical characteristics.</p>
-        </td>
-        </tr>
-        <tr>
-            
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2305.09836">
-                <papertitle>Revisiting the Minimalist Approach to Offline Reinforcement Learning </papertitle>
-            </a>
-            <br>
-            <b>OLD NAME:</b> Revisiting Behavior Regularized Actor-Critic
-            <br>
-            <strong>Denis Tarasov</strong>,
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>NeurIPS</em>, 2023
-            <p>Recent years have witnessed significant advancements in offline reinforcement learning (RL), resulting in the development of numerous algorithms with varying degrees of complexity. While these algorithms have led to noteworthy improvements, many incorporate seemingly minor design choices that impact their effectiveness beyond core algorithmic advances. However, the effect of these design choices on established baselines remains understudied. In this work, we aim to bridge this gap by conducting a retrospective analysis of recent works in offline RL and propose ReBRAC, a minimalistic algorithm that integrates such design elements built on top of the TD3+BC method. We evaluate ReBRAC on 51 datasets with both proprioceptive and visual state spaces using D4RL and V-D4RL benchmarks, demonstrating its state-of-the-art performance among ensemble-free methods. To further illustrate the efficacy of these design choices, we perform a large-scale ablation study and hyperparameter sensitivity analysis on the scale of thousands of experiments.</p>
-        </td>
-        </tr>
-        <tr>
+  <header class="container hero">
+    <section class="hero-copy reveal">
+      <p class="eyebrow">Denis Tarasov</p>
+      <p class="nickname">Isaac Aufr&uuml;hrer</p>
+      <h1>Researcher in reinforcement learning and robotics</h1>
+      <p class="lead">
+        I am a PhD student in Artificial Intelligence and Robotics at ETH Zurich
+        <a href="https://srl.ethz.ch/">Soft Robotics Lab</a> (since February 2026),
+        supervised by Prof. Dr. <a href="https://srl.ethz.ch/the-group/prof-robert-katzschmann.html">Robert Katzschmann</a>.
+      </p>
+      <p class="lead">
+        <strong>Research Focus:</strong> Reinforcement Learning research, offline RL, Meta/In-Context RL, and RL applications to different fields.
+      </p>
+      <p class="lead">
+        I was also one of the core members of the <a href="https://dunnolab.ai/">dunno collective</a>.
+      </p>
 
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://openreview.net/forum?id=SyAS49bBcv">
-                <papertitle>CORL: Research-oriented Deep Offline Reinforcement Learning Library</papertitle>
-            </a>
-            <br>
-            <strong>Denis Tarasov</strong>,
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            Dmitry Akimov,
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>NeurIPS</em>, 2023
-            <br>
-                <a href="https://github.com/corl-team/CORL">code</a>
-            <p></p>
-            <p>CORL is an open-source library that provides single-file implementations of Deep Offline Reinforcement Learning algorithms. It emphasizes a simple developing experience with a straightforward codebase and a modern analysis tracking tool. In CORL, we isolate methods implementation into distinct single files, making performance-relevant details easier to recognise. Additionally, an experiment tracking feature is available to help log metrics, hyperparameters, dependencies, and more to the cloud. Finally, we have ensured the reliability of the implementations by benchmarking a commonly employed D4RL benchmark.</p>
-        </td>
-        </tr>
-        <tr>
+      <nav class="link-row" aria-label="External links">
+        <a href="mailto:tarasov.denis.al@gmail.com">Email</a>
+        <a href="data/Denis_Tarasov_CV.pdf">CV</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=LQcCkD8AAAAJ">Scholar</a>
+        <a href="https://www.semanticscholar.org/author/Denis-Tarasov/2064312685">Semantic Scholar</a>
+        <a href="https://github.com/DT6A">GitHub</a>
+        <a href="https://www.linkedin.com/in/tarasovdeal/">LinkedIn</a>
+      </nav>
+    </section>
 
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2306.08772">
-                <papertitle>Katakomba: Tools and Benchmarks for Data-Driven NetHack </papertitle>
-            </a>
-            <br>
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            <strong>Denis Tarasov</strong>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>NeurIPS</em>, 2023
-            <p>NetHack is known as the frontier of reinforcement learning research where learning-based methods still need to catch up to rule-based solutions. One of the promising directions for a breakthrough is using pre-collected datasets similar to recent developments in robotics, recommender systems, and more under the umbrella of offline reinforcement learning (ORL). Recently, a large-scale NetHack dataset was released; while it was a necessary step forward, it has yet to gain wide adoption in the ORL community. In this work, we argue that there are three major obstacles for adoption: tool-wise, implementation-wise, and benchmark-wise. To address them, we develop an open-source library that provides workflow fundamentals familiar to the ORL community: pre-defined D4RL-style tasks, uncluttered baseline implementations, and reliable evaluation tools with accompanying configs and logs synced to the cloud.</p>
-        </td>
-        </tr>
-        <tr>
-            
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2301.13616">
-                <papertitle>Anti-Exploration by Random Network Distillation</papertitle>
-            </a>
-            <br>
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <strong>Denis Tarasov</strong>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>ICML</em>, 2023
-            <p>Despite the success of Random Network Distillation (RND) in various domains, it was shown as not discriminative enough to be used as an uncertainty estimator for penalizing out-of-distribution actions in offline reinforcement learning. In this paper, we revisit these results and show that, with a naive choice of conditioning for the RND prior, it becomes infeasible for the actor to effectively minimize the anti-exploration bonus and discriminativity is not an issue. We show that this limitation can be avoided with conditioning based on Feature-wise Linear Modulation (FiLM), resulting in a simple and efficient ensemble-free algorithm based on Soft Actor-Critic. We evaluate it on the D4RL benchmark, showing that it is capable of achieving performance comparable to ensemble-based methods and outperforming ensemble-free approaches by a wide margin.</p>
-        </td>
-        </tr>
-        <tr>
+    <aside class="profile-card reveal">
+      <img src="images/profile_photo.png" alt="Portrait of Denis Tarasov" class="profile-photo">
+      <dl>
+        <div>
+          <dt>Current role</dt>
+          <dd>PhD Student, ETH Zurich</dd>
+        </div>
+        <div>
+          <dt>Location</dt>
+          <dd>Zurich, Switzerland</dd>
+        </div>
+        <div>
+          <dt>Lab</dt>
+          <dd><a href="https://srl.ethz.ch/">Soft Robotics Lab</a></dd>
+        </div>
+      </dl>
+    </aside>
+  </header>
 
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://openreview.net/forum?id=mvjQwKFYJ_">
-                <papertitle>Q-Ensemble for Offline RL: Don't Scale the Ensemble, Scale the Batch Size</papertitle>
-            </a>
-            <br>
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <strong>Denis Tarasov</strong>,
-            Dmitry Akimov,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>NeurIPS 3rd Offline RL Workshop: Offline RL as a "Launchpad"</em>, 2022
-            <br>
-<!--            <a href="data/acl-prompts.pdf">poster</a>-->
-            <p></p>
-            <p>Training large neural networks is known to be time-consuming, with the learning duration taking days or even weeks. To address this problem, large-batch optimization was introduced. This approach demonstrated that scaling mini-batch sizes with appropriate learning rate adjustments can speed up the training process by orders of magnitude. While long training time was not typically a major issue for model-free deep offline RL algorithms, recently introduced Q-ensemble methods achieving state-of-the-art performance made this issue more relevant, notably extending the training duration. In this work, we demonstrate how this class of methods can benefit from large-batch optimization, which is commonly overlooked by the deep offline RL community. We show that scaling the mini-batch size and naively adjusting the learning rate allows for (1) a reduced size of the Q-ensemble, (2) stronger penalization of out-of-distribution actions, and (3) improved convergence time, effectively shortening training duration by 2.5x times on average.</p>
-        </td>
-        </tr>
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://openreview.net/forum?id=qG_x6oTIki">
-                <papertitle>Let Offline RL Flow: Training Conservative Agents in the Latent Space of Normalizing Flows</papertitle>
-            </a>
-            <br>
-            Dmitry Akimov,
-            <a href="https://howuhh.github.io/">Alexander Nikulin</a>,
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <strong>Denis Tarasov</strong>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>NeurIPS 3rd Offline RL Workshop: Offline RL as a "Launchpad"</em>, 2022
-            <br>
-<!--            <a href="data/acl-prompts.pdf">poster</a>-->
-            <p></p>
-            <p>Offline reinforcement learning aims to train a policy on a pre-recorded and fixed dataset without any additional environment interactions. There are two major challenges in this setting: (1) extrapolation error caused by approximating the value of state-action pairs not well-covered by the training data and (2) distributional shift between behavior and inference policies. One way to tackle these problems is to induce conservatism - i.e., keeping the learned policies closer to the behavioral ones. To achieve this, we build upon recent works on learning policies in latent action spaces and use a special form of Normalizing Flows for constructing a generative model, which we use as a conservative action encoder. This Normalizing Flows action encoder is pre-trained in a supervised manner on the offline dataset, and then an additional policy model - controller in the latent space - is trained via reinforcement learning.
+  <main class="container">
+    <section class="panel reveal">
+      <h2>Publications</h2>
 
-                This approach avoids querying actions outside of the training dataset and therefore does not require additional regularization for out-of-dataset actions. We evaluate our method on various locomotion and navigation tasks, demonstrating that our approach outperforms recently proposed algorithms with generative action models on a large portion of datasets.</p>
-        </td>
-        </tr>
-        <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://openreview.net/forum?id=Spf4TE6NkWq">
-                <papertitle>Prompts and Pre-Trained Language Models for Offline Reinforcement Learning </papertitle>
-            </a>
-            <br>
-            <strong>Denis Tarasov</strong>,
-            <a href="https://vkurenkov.me/">Vladislav Kurenkov</a>,
-            <a href="https://scitator.com/">Sergey Kolesnikov</a>,
-            <br>
-            <em>ICLR Workshop GPL, ACL Workshop LNLS</em>, 2022
-            <br>
-            <a href="data/acl-prompts.pdf">poster</a>
-            <p></p>
-            <p>In this preliminary study, we introduce a simple way to leverage pre-trained language models in deep offline RL settings that are not naturally suited for textual
-                representation. We propose using a state transformation into a human-readable
-                text and a minimal fine-tuning of the pre-trained language model when training
-                with deep offline RL algorithms. This approach shows consistent performance
-                gains on the NeoRL MuJoCo datasets. Our experiments suggest that LM finetuning is crucial for good performance on robotics tasks. However, we also show
-                that it is not necessary when working with finance environments in order to retain
-                significant improvement in the final performance.</p>
-        </td>
-        </tr>
-        <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://infocom.spbstu.ru/userfiles/files/articles/2022/4/86-97.pdf">
-                    <papertitle>Fixing 1-bit Adam and 1-bit LAMB algorithms</papertitle>
-                </a>
-                <br>
-                <strong>Denis Tarasov</strong>, Vasily Ershov
-                <br>
-                <em>SEIM</em>, 2022 <strong>(Oral Presentation)</strong>
-                <br>
-<!--                <a href="data/Shelhamer2015.bib">bibtex</a>-->
-                <p></p>
-                <p>Today, various neural network models are trained using distributed learning in order to reduce the time spent. Slow network
-                    communication between devices can significantly reduce distribution efficiency. Recent studies propose one-bit versions
-                    of the Adam and LAMB algorithms, which can significantly reduce the amount of transmitted information, as a result of
-                    which the scalability of training is improved. However, it turned out that these algorithms diverge on some neural network
-                    architectures. The goal of this work is an empirical study of these algorithms, to find the solution of the discovered divergence
-                    problem and the proposal of new aspects of testing gradient descent algorithms.</p>
-            </td>
-        </tr>
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2602.09580">Sample-Efficient Real-World Dexterous Policy Fine-Tuning via Action-Chunked Critics and Normalizing Flows</a></h3>
+        <p class="meta">Preprint, 2026</p>
+        <p>Chenyu Yang, <strong>Denis Tarasov</strong>, Davide Liconti, Hehui Zheng, Robert K. Katzschmann</p>
+      </article>
 
-        <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://link.springer.com/article/10.1007/s42001-023-00205-y">
-                <papertitle>Predicting ethnicity with data on personal names in Russia</papertitle>
-            </a>
-            <br>
-            <a href="http://abessudnov.net/">Alexey Bessudnov</a>, <strong>Denis Tarasov</strong>, Viacheslav Panasovets,Veronica Kostenko, Ivan Smirnov, Vladimir Uspenskiy
-            <br>
-            <em>Journal of Computational Social Science</em>, 2023
-            <br>
-            <a href="https://github.com/abessudnov/ruEthnicNamesPublic">code</a>
-            <p></p>
-            <p>In this paper we develop a machine learning classifier that predicts perceivedethnicity from data on personal names for major ethnic groups populating Russia. We collect data from VK, the largest Russian social media website. Ethnicity has been determined from languages spoken by users and their geographicallocation, with the data manually cleaned by crowd workers. The classifier showsthe accuracy of 0.82 for a scheme with 24 ethnic groups and 0.92 for 15 aggregated ethnic groups. It can be used for research on ethnicity and ethnic relationsin Russia, in particular with VK and other social media data.</p>
-        </td>
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2508.16845">NinA: Normalizing Flows in Action. Training VLA Models with Normalizing Flows</a></h3>
+        <p class="meta">EWM Workshop, NeurIPS 2025</p>
+        <p><strong>Denis Tarasov</strong>, Alexander Nikulin, Ilya Zisman, Albina Klepach, Nikita Lyubaykin, Andrei Polubarov, Alexander Derevyagin, Vladislav Kurenkov</p>
+      </article>
 
-        </tbody></table>
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2505.22914">cadrille: Multi-modal CAD Reconstruction with Online Reinforcement Learning</a></h3>
+        <p class="meta">ICLR 2026 (Oral)</p>
+        <p>Maksim Kolodiazhnyi, <strong>Denis Tarasov</strong>, Dmitrii Zhemchuzhnikov, Alexander Nikulin, Ilya Zisman, Anna Vorontsova, Anton Konushin, Vladislav Kurenkov, Danila Rukhovich</p>
+      </article>
 
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2502.00379">Latent action learning requires supervision in the presence of distractors</a></h3>
+        <p class="meta">ICML 2025</p>
+        <p>Alexander Nikulin, Ilya Zisman, <strong>Denis Tarasov</strong>, Nikita Lyubaykin, Andrei Polubarov, Igor Kiselev, Vladislav Kurenkov</p>
+      </article>
 
-<!--        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>-->
-<!--        <tr>-->
-<!--            <td>-->
-<!--                <heading>Misc</heading>-->
-<!--            </td>-->
-<!--        </tr>-->
-<!--        </tbody></table>-->
-<!--        <table width="100%" align="center" border="0" cellpadding="20"><tbody>-->
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2501.19400">Vintix: Action Model via In-Context Reinforcement Learning</a></h3>
+        <p class="meta">ICML 2025</p>
+        <p>Andrey Polubarov, Nikita Lyubaykin, Alexander Derevyagin, Ilya Zisman, <strong>Denis Tarasov</strong>, Alexander Nikulin, Vladislav Kurenkov</p>
+      </article>
 
-<!--        <tr>-->
-<!--            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>-->
-<!--            <td width="75%" valign="center">-->
-<!--                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>-->
-<!--                <br>-->
-<!--                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>-->
-<!--                <br>-->
-<!--                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>-->
-<!--                <br>-->
-<!--                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>-->
-<!--            </td>-->
-<!--        </tr>-->
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2502.17666">Yes, Q-learning helps offline in-context RL</a></h3>
+        <p class="meta">SSI-FM Workshop, ICRL 2025</p>
+        <p><strong>Denis Tarasov</strong>, Alexander Nikulin, Ilya Zisman, Albina Klepach, Andrei Polubarov, Nikita Lyubaykin, Alexander Derevyagin, Igor Kiselev, Vladislav Kurenkov</p>
+      </article>
 
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-            <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                    Based on <a href="http://jonbarron.info">http://jonbarron.info</a>
-                </p>
-            </td>
-        </tr>
-        </tbody></table>
-    </td>
-</tr>
-</table>
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2502.09680">Object-Centric Latent Action Learning</a></h3>
+        <p class="meta">Workshop on World Models, ICLR 2025</p>
+        <p>Albina Klepach, Alexander Nikulin, Ilya Zisman, <strong>Denis Tarasov</strong>, Alexander Derevyagin, Andrei Polubarov, Nikita Lyubaykin, Vladislav Kurenkov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2411.01958">N-gram induction heads for in-context RL: Improving stability and reducing data needs</a></h3>
+        <p class="meta">SSI-FM Workshop, ICRL 2025</p>
+        <p>Ilya Zisman, Alexander Nikulin, Viacheslav Sinii, <strong>Denis Tarasov</strong>, Nikita Lyubaykin, Andrei Polubarov, Igor Kiselev, Vladislav Kurenkov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2409.07606">The Role of Deep Learning Regularizations on Actors in Offline RL</a></h3>
+        <p class="meta">Preprint, 2024</p>
+        <p><strong>Denis Tarasov</strong>, Anja Surina, Caglar Gulcehre</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2406.06309">Is Value Functions Estimation with Classification Plug-and-play for Offline Reinforcement Learning?</a></h3>
+        <p class="meta">TMLR, 2024</p>
+        <p><strong>Denis Tarasov</strong>, Kirill Brilliantov, Dmitrii Kharlapenko</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2402.01812">Distilling LLMs' Decomposition Abilities into Compact Language Models</a></h3>
+        <p class="meta">ICML 2024 Workshops (AI4MATH and AutoRL)</p>
+        <p><strong>Denis Tarasov</strong>, Kumar Shridhar</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://openreview.net/forum?id=olMBz7gxls">Offline RL for generative design of protein binders</a></h3>
+        <p class="meta">NeurIPS 2023 Workshop AI4D3 (Oral)</p>
+        <p><strong>Denis Tarasov</strong>, Ulrich Mbou Sob, Miguel Arbesu, Nima H. Siboni, Sebastien Boyer, Andries Smit, Oliver Bent, Arnu Pretorius, Marcin Skwark</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2305.09836">Revisiting the Minimalist Approach to Offline Reinforcement Learning</a></h3>
+        <p class="meta">NeurIPS 2023</p>
+        <p><strong>Denis Tarasov</strong>, Vladislav Kurenkov, Alexander Nikulin, Sergey Kolesnikov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://openreview.net/forum?id=SyAS49bBcv">CORL: Research-oriented Deep Offline Reinforcement Learning Library</a></h3>
+        <p class="meta">NeurIPS 2023</p>
+        <p><strong>Denis Tarasov</strong>, Alexander Nikulin, Dmitry Akimov, Vladislav Kurenkov, Sergey Kolesnikov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2306.08772">Katakomba: Tools and Benchmarks for Data-Driven NetHack</a></h3>
+        <p class="meta">NeurIPS 2023</p>
+        <p>Vladislav Kurenkov, Alexander Nikulin, <strong>Denis Tarasov</strong>, Sergey Kolesnikov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://arxiv.org/abs/2301.13616">Anti-Exploration by Random Network Distillation</a></h3>
+        <p class="meta">ICML 2023</p>
+        <p>Alexander Nikulin, Vladislav Kurenkov, <strong>Denis Tarasov</strong>, Sergey Kolesnikov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://openreview.net/forum?id=mvjQwKFYJ_">Q-Ensemble for Offline RL: Don't Scale the Ensemble, Scale the Batch Size</a></h3>
+        <p class="meta">NeurIPS 2022 Offline RL Workshop</p>
+        <p>Alexander Nikulin, Vladislav Kurenkov, <strong>Denis Tarasov</strong>, Dmitriy Akimov, Sergey Kolesnikov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://openreview.net/forum?id=qG_x6oTIki">Let Offline RL Flow: Training Conservative Agents in the Latent Space of Normalizing Flows</a></h3>
+        <p class="meta">NeurIPS 2022 Offline RL Workshop</p>
+        <p>Dmitriy Akimov, Vladislav Kurenkov, Alexander Nikulin, <strong>Denis Tarasov</strong>, Sergey Kolesnikov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://openreview.net/forum?id=Spf4TE6NkWq">Prompts and Pre-Trained Language Models for Offline Reinforcement Learning</a></h3>
+        <p class="meta">ICLR 2022 Workshop GPL</p>
+        <p><strong>Denis Tarasov</strong>, Vladislav Kurenkov, Sergey Kolesnikov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://infocom.spbstu.ru/userfiles/files/articles/2022/4/86-97.pdf">Fixing 1-bit Adam and 1-bit LAMB algorithms</a></h3>
+        <p class="meta">SEIM 2022 (Oral)</p>
+        <p><strong>Denis Tarasov</strong>, Vasily Ershov</p>
+      </article>
+
+      <article class="pub">
+        <h3><a href="https://link.springer.com/article/10.1007/s42001-023-00205-y">Predicting ethnicity with data on personal names in Russia</a></h3>
+        <p class="meta">Journal of Computational Social Science, 2023</p>
+        <p>Alexey Bessudnov, <strong>Denis Tarasov</strong>, Viacheslav Panasovets, Veronica Kostenko, Ivan Smirnov, Vladimir Uspenskiy</p>
+      </article>
+    </section>
+
+    <section class="panel reveal">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <p class="meta">Nov 2025 - Feb 2026</p>
+          <p><strong>Researcher, ETH Zurich Soft Robotics Lab</strong><br>Research in RL for robotics.</p>
+        </li>
+        <li>
+          <p class="meta">Feb 2024 - Sep 2024</p>
+          <p><strong>Research Assistant, EPFL CLAIRe Lab</strong><br>Research in RL exploration with VLM models and offline RL. Supervised by Caglar Gulcehre.</p>
+        </li>
+        <li>
+          <p class="meta">Sep 2023 - Feb 2024</p>
+          <p><strong>Research Assistant, ETH Zurich Language, Reasoning and Education Lab</strong><br>Research in reasoning and RLAIF techniques. Supervised by Mrinmaya Sachan.</p>
+        </li>
+        <li>
+          <p class="meta">Jun 2023 - Sep 2023</p>
+          <p><strong>Research Intern, InstaDeep</strong><br>Research on applying offline RL techniques to drug design.</p>
+        </li>
+        <li>
+          <p class="meta">Oct 2021 - Jun 2023</p>
+          <p><strong>Research Scientist, Tinkoff AI</strong><br>Offline RL research, publications at ICML/NeurIPS, and development of the CORL library.</p>
+        </li>
+        <li>
+          <p class="meta">Jul 2022 - Sep 2022</p>
+          <p><strong>Research Engineering Intern, Meta</strong><br>AI Applied Research Relevance team; improved entity-linking model performance with distillation and unlabeled signals.</p>
+        </li>
+        <li>
+          <p class="meta">Jul 2021 - Oct 2021</p>
+          <p><strong>Research Engineering Intern, Yandex</strong><br>Research on distributed training over slow networks; fixes for 1-bit Adam/LAMB divergence issues.</p>
+        </li>
+        <li>
+          <p class="meta">Jul 2020 - Aug 2020</p>
+          <p><strong>Research Intern, JetBrains Research</strong><br>Deep learning for antibodies CDR-H3 structure prediction with improved physical validity.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="panel reveal stack-vertical">
+      <div>
+        <h2>Education</h2>
+        <ul class="simple-list">
+          <li>PhD in AI and Robotics, ETH Zurich (2026 - present)</li>
+          <li>MSc in Artificial Intelligence, ETH Zurich, GPA 5.5/6 (2023 - 2025)</li>
+          <li>BSc in Applied Math and CS, Constructor University Bremen (2022 - 2023)</li>
+          <li>BSc in Applied Math and CS, HSE, GPA 8.73/10 (2019 - 2022)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Awards</h2>
+        <ul class="simple-list">
+          <li>Best Student Paper Award, AI4D3 NeurIPS Workshop (2023)</li>
+          <li>Winner, Ya Professional Olympiad AI Track (2022)</li>
+          <li>2nd place, Huawei Metric Learning Hackathon at RAAI Summer School (2019)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Service</h2>
+        <ul class="simple-list">
+          <li>Reviewer: ICML, ICLR, AAAI, NeurIPS (2023-2025)</li>
+          <li>Bachelor's diploma project supervision, Constructor University Bremen (2023-2024)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer class="container footer">
+    <p>Last updated from CV data: February 2026.</p>
+  </footer> -->
+  <script src="julia-bg.js"></script>
 </body>
-
 </html>
